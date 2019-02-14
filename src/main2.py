@@ -1,10 +1,10 @@
 import load_data
 import tensorflow as tf
-import lenet
+import lenet2
 
 tf.Session(config=tf.ConfigProto(log_device_placement=True))
 
-EPOCHS = 101010101010101010100
+EPOCHS = 40
 BATCH_SIZE = 256 
 
 def evaluate(X_data, y_data):
@@ -40,9 +40,9 @@ x = tf.placeholder(tf.float32, (None, 32, 32, 1))
 y = tf.placeholder(tf.int32, (None))
 one_hot_y = tf.one_hot(y, n_classes)
 
-rate = 0.00001
+rate = 0.001
 
-logits = lenet.LeNet(x)
+logits = lenet2.LeNet2(x)
 cross_entropy = tf.nn.softmax_cross_entropy_with_logits(labels=one_hot_y, logits=logits)
 loss_operation = tf.reduce_mean(cross_entropy)
 optimizer = tf.train.AdamOptimizer(learning_rate = rate)
@@ -75,5 +75,5 @@ with tf.Session() as sess:
         print("Validation Accuracy = {:.3f}".format(validation_accuracy))
         print()
         
-    saver.save(sess, './lenet')
+    saver.save(sess, './lenet2')
     print("Model saved")
