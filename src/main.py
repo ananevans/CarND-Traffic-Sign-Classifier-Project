@@ -4,7 +4,7 @@ import lenet
 
 tf.Session(config=tf.ConfigProto(log_device_placement=True))
 
-EPOCHS = 101010101010101010100
+EPOCHS = 40
 BATCH_SIZE = 256 
 
 def evaluate(X_data, y_data):
@@ -40,7 +40,7 @@ x = tf.placeholder(tf.float32, (None, 32, 32, 1))
 y = tf.placeholder(tf.int32, (None))
 one_hot_y = tf.one_hot(y, n_classes)
 
-rate = 0.00001
+rate = 0.001
 
 logits = lenet.LeNet(x)
 cross_entropy = tf.nn.softmax_cross_entropy_with_logits(labels=one_hot_y, logits=logits)

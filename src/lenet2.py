@@ -12,14 +12,14 @@ def LeNet2(x):
     #weights
     wc1 = tf.Variable(tf.truncated_normal(shape=(5, 5, 1, 108), mean = mu, stddev = sigma))
     wc2 = tf.Variable(tf.truncated_normal(shape=(5, 5, 108, 200), mean = mu, stddev = sigma))
-    wd1 = tf.Variable(tf.truncated_normal(shape=(5*5*200 + 14*14*108, 1024), mean = mu, stddev = sigma)),
-    wd2 = tf.Variable(tf.truncated_normal(shape=(1024, 128), mean = mu, stddev = sigma)),
+    wd1 = tf.Variable(tf.truncated_normal(shape=(5*5*200 + 14*14*108, 1024), mean = mu, stddev = sigma))
+    wd2 = tf.Variable(tf.truncated_normal(shape=(1024, 128), mean = mu, stddev = sigma))
     wout =tf.Variable(tf.truncated_normal(shape=(128, n_classes), mean = mu, stddev = sigma))
     #biases
-    bc1 = tf.Variable(tf.zeros(108)),
-    bc2 = tf.Variable(tf.zeros(200)),
-    bd1 = tf.Variable(tf.zeros(1024)),
-    bd2 = tf.Variable(tf.zeros(128)),
+    bc1 = tf.Variable(tf.zeros(108))
+    bc2 = tf.Variable(tf.zeros(200))
+    bd1 = tf.Variable(tf.zeros(1024))
+    bd2 = tf.Variable(tf.zeros(128))
     bout = tf.Variable(tf.zeros(n_classes))
     
     # Layer 1: Convolutional. Input = 32x32x1. Output = 28x28x108.
