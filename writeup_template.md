@@ -38,7 +38,7 @@ The goals / steps of this project are the following:
 
 The code is available on [github](https://github.com/ananevans/CarND-Traffic-Sign-Classifier-Project).
 
-I trained and run the exporiments on a computer with three GPU's (NVIDIA Corporation GeForce GTX 1080 Ti). The code with results is available [here][./Traffic_Sign_Classifier.html]
+I trained and run the exporiments on a computer with three GPU's (NVIDIA Corporation GeForce GTX 1080 Ti). The code with results is available [here](./Traffic_Sign_Classifier.html)
 
 
 ### Data Set Summary & Exploration
@@ -134,7 +134,7 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code and results are available in here[./Traffic_Sign_Classifier.html] in the Analyze Performance section.
+The code and results are available [here](./Traffic_Sign_Classifier.html) in the Analyze Performance section.
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
