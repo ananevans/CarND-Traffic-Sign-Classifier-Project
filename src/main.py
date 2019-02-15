@@ -42,7 +42,7 @@ one_hot_y = tf.one_hot(y, n_classes)
 
 rate = 0.001
 
-logits = lenet.LeNet(x)
+logits = lenet.LeNet(x, 0.5)
 cross_entropy = tf.nn.softmax_cross_entropy_with_logits(labels=one_hot_y, logits=logits)
 loss_operation = tf.reduce_mean(cross_entropy)
 optimizer = tf.train.AdamOptimizer(learning_rate = rate)
@@ -74,6 +74,7 @@ with tf.Session() as sess:
         validation_accuracy = evaluate(X_valid, y_valid)
         print("Validation Accuracy = {:.3f}".format(validation_accuracy))
         print()
-        
+    test_accuracy = evaluate(X_test, y_test)
+    print("Test Accuracy = {:.3f}".format(test_accuracy))
     saver.save(sess, './lenet')
     print("Model saved")

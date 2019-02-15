@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./test-images60_kmh.jpg "60km Speed Limit"
+[image4]: ./test-images/60_kmh.jpg "60km Speed Limit"
 [image5]: ./test-images/left_turn.jpg "Left Turn"
 [image6]: ./test-images/road_work.jpg "Road Work"
 [image7]: ./test-images/stop_sign.jpg "Stop Sign"
@@ -38,7 +38,7 @@ The goals / steps of this project are the following:
 
 The code is available on [github](https://github.com/ananevans/CarND-Traffic-Sign-Classifier-Project).
 
-I trained and run the exporiments on a computer with three GPU's (NVIDIA Corporation GeForce GTX 1080 Ti). The code with results is available [here][./Traffic_Sign_Classifier.html]
+I trained and run the exporiments on a computer with three GPU's (NVIDIA Corporation GeForce GTX 1080 Ti). The code with results is available [here](./Traffic_Sign_Classifier.html)
 
 
 ### Data Set Summary & Exploration
@@ -93,7 +93,7 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used the AdamOptimizer, a batch size of 256, and 40 epochs.
+To train the model, I used the AdamOptimizer, a batch size of 256, a 0.001 learning rate, and 40 epochs.
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
@@ -115,7 +115,7 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image4] ![alt text][image5] ![alt text][image6] 
 ![alt text][image7] ![alt text][image8]
 
-The second image is misclassified.
+The road work image is misclassified.
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
@@ -134,7 +134,7 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
-The code and results are available in here[./Traffic_Sign_Classifier.html] in the Analyze Performance section.
+The code and results are available [here](./Traffic_Sign_Classifier.html) in the Analyze Performance section.
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
