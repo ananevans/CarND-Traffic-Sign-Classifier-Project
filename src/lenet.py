@@ -4,7 +4,7 @@ import math
 
 from tensorflow.contrib.layers import flatten
 
-def LeNet(x):    
+def LeNet(x,dropout):    
     n_classes = 43
     # Arguments used for tf.truncated_normal, randomly defines variables for the weights and biases for each layer
     mu = 0
@@ -52,7 +52,7 @@ def LeNet(x):
     fc1 = tf.add(tf.matmul(conv2, wd1), bd1)
        
     # Activation.
-    dropout1 = 0.8  # Dropout, probability to keep units
+    dropout1 = dropout  # Dropout, probability to keep units
     fc1 = tf.nn.relu(fc1)
     fc1 = tf.nn.dropout(fc1, dropout1)
 
@@ -60,7 +60,7 @@ def LeNet(x):
     fc2 = tf.add(tf.matmul(fc1, wd2), bd2)
     
     # TODO: Activation.
-    dropout2 = 0.8  # Dropout, probability to keep units
+    dropout2 = dropout  # Dropout, probability to keep units
     fc2 = tf.nn.relu(fc2)
     fc2 = tf.nn.dropout(fc2, dropout2)
 
