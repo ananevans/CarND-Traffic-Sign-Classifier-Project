@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image1]: ./examples/visualization.jpg "Visualization"
 [image2]: ./examples/grayscale.jpg "Grayscaling"
 [image3]: ./examples/random_noise.jpg "Random Noise"
-[image4]: ./test-images60_kmh.jpg "60km Speed Limit"
+[image4]: ./test-images/60_kmh.jpg "60km Speed Limit"
 [image5]: ./test-images/left_turn.jpg "Left Turn"
 [image6]: ./test-images/road_work.jpg "Road Work"
 [image7]: ./test-images/stop_sign.jpg "Stop Sign"
